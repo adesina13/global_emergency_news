@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
     domains: [
       "a3.espncdn.com",
       "i.cbc.ca",
-      "www.hotelnewsresource.com", // ✅ add this
     ],
   },
 };

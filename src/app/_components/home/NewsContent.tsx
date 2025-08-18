@@ -26,17 +26,10 @@ export default function NewsContent({ time, title, headline, imageUrl }: NewsCon
         <p className="text-[#994D4D] text-[14px]">{headline}</p>
       </div>
 
-      {imageUrl && (
-        <div className="md:w-[35%] w-full relative h-48">
-          <Image
-            src={imageUrl}
-            alt={title}
-            fill
-            className="rounded-md object-cover"
-            sizes="(max-width: 768px) 100vw, 35vw"
-          />
-        </div>
-      )}
+      {imageUrl && ( 
+        <div className=" md:w-[35%] w-full"> 
+          <img src={imageUrl} alt={title} className="rounded-md w-full h-full" /> 
+        </div> )}
     </article>
   );
 }
