@@ -85,8 +85,8 @@ export default function About(){
 
 
             <footer className="bg-white md:h-[280px] w-full mt-[80px] py-9 flex px-[20px] md:justify-center md:items-center">
-                <article className="md:w-[50%] flex flex-col items-center">
-                    <div className="flex gap-2 items-center">
+                <article className="md:w-[50%] flex flex-col items-center ">
+                    <div className="flex gap-2 items-center self-start">
                         <Image src={logo} alt="logo" className="w-[19.25px] h-[19.68px]"/>
                         <p className="font-semibold text-[16px]">Global Emergency News</p>
                     </div>
