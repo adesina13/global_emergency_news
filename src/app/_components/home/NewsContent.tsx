@@ -12,15 +12,15 @@ export default function NewsContent({ time, title, headline, imageUrl }: any) {
 
   return (
     
-      <article className="flex justify-between items-start gap-4"> 
-        <div className="w-[60%]"> 
+      <article className="flex md:flex-row flex-col-reverse justify-between items-start gap-4"> 
+        <div className="md:w-[60%]"> 
             <p className="text-[#994D4D] text-[14px]">{formattedTime}</p> 
             <p className="font-semibold text-[16px]">{title}</p> 
-            <p className="text-[#994D4D] text-[14px]">{headline}</p> 
+            <p className="text-[#994D4D] ttext-[14px]">{headline}</p> 
         </div> 
         {imageUrl && 
             ( 
-            <div className="relative w-[35%] "> 
+            <div className=" md:w-[35%] w-full"> 
                 <img src={imageUrl} alt={title} className="rounded-md w-full h-full" /> 
             </div> 
             )} 

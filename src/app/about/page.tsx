@@ -11,7 +11,7 @@ import instagram from '@/images/instagram.png'
 export default function About(){
     return(
         <main className="flex flex-col justify-center items-center">
-            <section className="w-[70%]">
+            <section className="md:w-[70%] px-[20px]">
                 <article className="py-[53px] flex flex-col gap-[35px] ">
                     <h3 className="text-center font-semibold text-[28px]">About Us</h3>
                     <p className="text-center">Our mission is to provide timely and accurate emergency news from around the globe, 
@@ -20,20 +20,20 @@ export default function About(){
                         empowering people to respond effectively in critical situations.</p>
                 </article>
 
-                <article className="pb-[53px] flex  justify-between">
-                    <div className="w-[301px] h-[136px] p-[14px] border border-solid border-[#E8CFCF] rounded-[8px] shadow shadow-[#E8CFCF]">
+                <article className="pb-[53px] flex md:flex-row flex-col gap-y-6 justify-between">
+                    <div className="w-full md:w-[290px] h-[136px] p-[14px] border border-solid border-[#E8CFCF] rounded-[8px] shadow shadow-[#E8CFCF]">
                         <Image src={notificationBell} alt="notificationBell" className="w-[20px] h-auto mb-[12px]"/>
                         <h4 className="font-semibold text-[20px]">Real-Time Alerts</h4>
                         <p className="text-[#994D4D]">Instant notifications for breaking emergencies.</p>
                     </div>
 
-                    <div className="w-[301px] h-[136px] p-[14px] border border-solid border-[#E8CFCF] rounded-[8px] shadow shadow-[#E8CFCF]">
+                    <div className="w-full md:w-[290px] h-[136px] p-[14px] border border-solid border-[#E8CFCF] rounded-[8px] shadow shadow-[#E8CFCF]">
                         <Image src={global} alt="global" className="w-[20px] h-auto mb-[12px]"/>
                         <h4 className="font-semibold text-[20px]">Global Coverage</h4>
                         <p className="text-[#994D4D]">Comprehensive news from every corner of the world.</p>
                     </div>
 
-                    <div className="w-[301px] h-[136px] p-[14px] border border-solid border-[#E8CFCF] rounded-[8px] shadow shadow-[#E8CFCF]">
+                    <div className="w-full md:w-[290px] h-[136px] p-[14px] border border-solid border-[#E8CFCF] rounded-[8px] shadow shadow-[#E8CFCF]">
                         <Image src={verify} alt="verify" className="w-[20px] h-auto mb-[12px]"/>
                         <h4 className="font-semibold text-[20px]">Verified Reports</h4>
                         <p className="text-[#994D4D]">Reliable information from trusted sources.</p>
@@ -44,8 +44,8 @@ export default function About(){
                 <article className="py-[53px] flex flex-col gap-[35px] ">
                     <h3 className="text-center font-semibold text-[28px]">Contact Us</h3>
                     
-                    <div className="flex justify-between">
-                        <div className="flex flex-col gap-[4px] text-[14px] w-[301px]">
+                    <div className="flex md:flex-row flex-col gap-y-7 justify-between">
+                        <div className="flex flex-col gap-[4px] text-[14px] w-full md:w-[301px]">
                             <label htmlFor="" className="font-semibold">Name</label>
                             <input type="text" 
                                 className="w-full h-[46px] p-[12px] bg-[#FFFFFF] border border-[#E8CFCF] 
@@ -55,7 +55,7 @@ export default function About(){
                         </div>
 
 
-                        <div className="flex flex-col gap-[4px] text-[14px] w-[301px]">
+                        <div className="flex flex-col gap-[4px] text-[14px] w-full md:w-[301px]">
                             <label htmlFor="" className="font-semibold">Email</label>
                             <input type="text" 
                                 className="w-full h-[46px] p-[12px] bg-[#FFFFFF] border border-[#E8CFCF] 
@@ -64,7 +64,7 @@ export default function About(){
                             />
                         </div>
 
-                        <div className="flex flex-col gap-[4px] text-[14px] w-[301px]">
+                        <div className="flex flex-col gap-[4px] text-[14px] w-full md:w-[301px]">
                             <label htmlFor="" className="font-semibold">Category</label>
                             <CategorySelectAbout />
                         </div>
@@ -84,14 +84,14 @@ export default function About(){
             </section>
 
 
-            <footer className="bg-white h-[280px] w-full mt-[80px] flex justify-center items-center">
-                <article className="w-[50%] flex flex-col items-center">
+            <footer className="bg-white md:h-[280px] w-full mt-[80px] py-9 flex px-[20px] md:justify-center md:items-center">
+                <article className="md:w-[50%] flex flex-col items-center">
                     <div className="flex gap-2 items-center">
                         <Image src={logo} alt="logo" className="w-[19.25px] h-[19.68px]"/>
                         <p className="font-semibold text-[16px]">Global Emergency News</p>
                     </div>
 
-                    <div className="mt-[60px] flex justify-between w-full">
+                    <div className="mt-[60px] flex md:flex-row flex-col gap-y-7 justify-between w-full">
                         <div className="flex flex-col gap-[4px]">
                             <h5 className="font-semibold text-[18px]">Direct Contact</h5>
                             <p>Email: contact@globalnews.com</p>

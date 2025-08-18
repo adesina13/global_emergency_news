@@ -63,7 +63,7 @@ export function LocationSelect() {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[333px] h-[46px] justify-between bg-white text-[#994D4D] text-[14px] rounded-[8px] border border-solid border-[#E8CFCF]"
+          className="w-full md:w-[333px] h-[46px] justify-between bg-white text-[#994D4D] text-[14px] rounded-[8px] border border-solid border-[#E8CFCF]"
         >
           {value || 'Select country'}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />

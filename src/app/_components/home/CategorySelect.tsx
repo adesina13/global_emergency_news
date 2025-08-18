@@ -9,7 +9,7 @@ export function CategorySelect(){
     return(
         <Select value={language} onValueChange={setLanguage}>
             <SelectTrigger
-                className="w-[333px] h-[46px] min-h-[46px] focus:outline-none !ring-0 !border-[#E8CFCF] 
+                className="w-full md:w-[333px] h-[46px] min-h-[46px] focus:outline-none !ring-0 !border-[#E8CFCF] 
                         focus:ring-0 focus:border-transparent bg-[#FFFFFF] rounded-[8px] text-[14px] "
             >
                 <SelectValue placeholder="Select" />

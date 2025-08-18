@@ -5,8 +5,8 @@ import { LocationSelect } from "./LocationSelect"
 
 export default function EmergencyNews(){
     return(
-        <aside className="w-fit h-full pl-[59px] pr-[42px] border-r border-solid border-[#D9D9D9]  py-[53px] overflow-y-auto">
-            <p className="text-[28px] font-semibold">Post Emergency News</p>
+        <aside className="md:w-fit w-full h-full md:pl-[59px] md:pr-[42px] px-[20px] border-t md:border-r border-solid border-[#D9D9D9]  py-[53px] ">
+            <p className="md:text-[28px] text-[20px] font-semibold">Post Emergency News</p>
 
             <form action="" method="post" 
                     className="flex flex-col gap-[18px] text-[16px] mt-[18px]"
@@ -16,7 +16,7 @@ export default function EmergencyNews(){
                 <div className="flex flex-col gap-[4px]">
                     <label htmlFor="" className="font-medium">Title</label>
                     <input type="text" 
-                        className="w-[333px] h-[46px] p-[12px] bg-[#FFFFFF] border border-[#E8CFCF] 
+                        className="w-full md:w-[333px] h-[46px] p-[12px] bg-[#FFFFFF] border border-[#E8CFCF] 
                         border-solid text-[#994D4D] rounded-[8px]"
                         placeholder="Enter  title"
                     />
@@ -25,7 +25,7 @@ export default function EmergencyNews(){
                 <div className="flex flex-col gap-[4px]">
                     <label htmlFor="" className="font-medium">Body</label>
                     <textarea  
-                        className="w-[333px] h-[120px] p-[12px] bg-[#FFFFFF] border border-[#E8CFCF] 
+                        className="w-full md:w-[333px] h-[120px] p-[12px] bg-[#FFFFFF] border border-[#E8CFCF] 
                         border-solid text-[#994D4D] rounded-[8px]"
                     />
                 </div>

@@ -17,7 +17,7 @@ export function MainSelect({addClass, options, placeholder}: Props){
         <Select value={language} onValueChange={setLanguage}>
             <SelectTrigger
                 className={`${addClass} focus:outline-none !ring-0 !border-transparent 
-                        focus:ring-0 focus:border-transparent bg-[#F2E8E8] rounded-[8px] text-[14px] font-semibold `}
+                        focus:ring-0 focus:border-transparent bg-[#F2E8E8] rounded-[8px] md:text-[14px] text-[12px] font-semibold `}
             >
                 <SelectValue placeholder={placeholder} />
             </SelectTrigger>

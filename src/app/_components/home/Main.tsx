@@ -42,30 +42,30 @@ export default function Main() {
   }, [language, API_KEY]); // refetch when language changes
 
   return (
-    <main className="flex-1 h-full px-[50px] py-[53px] overflow-y-auto">
-      <header className="flex justify-between mb-[35px]">
-        <p className="text-[28px] font-bold">Live News Feed</p>
+    <main className="flex-1 h-full md:px-[50px] px-[20px] py-[53px]">
+      <header className="flex justify-between mb-[35px] md:flex-row flex-col-reverse gap-y-7">
+        <p className="text-[20px] md:text-[28px] font-bold">Live News Feed</p>
 
-        <div className="flex gap-[12.18px]">
+        <div className="flex gap-[12.18px] self-end">
           <MainSelect
-            addClass="w-[100px] px-[7px] py-[6px]"
+            addClass="md:w-[100px] w-[90px] px-[7px] py-[6px]"
             options={["General", "Politics", "Health", "Entertainment"]}
             placeholder="Category"
           />
           <MainSelect
-            addClass="w-[100px] px-[7px] py-[6px]"
+            addClass="md:w-[100px] w-[90px] px-[7px] py-[6px]"
             options={["Africa", "Nigeria", "Kenya", "Ghana"]}
             placeholder="Location"
           />
           <MainSelect
-            addClass="w-[130px] px-[7px] py-[6px]"
+            addClass="md:w-[130px] w-[110px] px-[7px] py-[6px]"
             options={["Today", "Yesterday", "Last week", "Last month"]}
             placeholder="Time Frame"
           />
         </div>
       </header>
 
-      <section className="flex flex-col gap-[32px]">
+      <section className="flex flex-col md:gap-[32px] gap-[45px]">
         {newsData.map((article) => (
           <NewsContent
             key={article.url}

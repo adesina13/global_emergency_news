@@ -34,10 +34,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${newsreader.className} antialiased bg-[#FCF7F7] h-[calc(100vh-80px)] `}
+        className={`${geistSans.variable} ${geistMono.variable} ${newsreader.className} antialiased bg-[#FCF7F7]  `}
       >
         <NavBar/>
-        <div className=" mt-[5rem] h-full">
+        <div className=" mt-[7rem] md:mt-[5rem] h-full">
           {children}
         </div>
         
