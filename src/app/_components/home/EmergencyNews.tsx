@@ -6,7 +6,7 @@ import { LocationSelect } from "./LocationSelect"
 export default function EmergencyNews(){
     return(
         <aside className="w-fit h-full pl-[59px] pr-[42px] border-r border-solid border-[#D9D9D9]  py-[53px] overflow-y-auto">
-            <p className="text-[20px] font-semibold">Post Emergency News</p>
+            <p className="text-[28px] font-semibold">Post Emergency News</p>
 
             <form action="" method="post" 
                     className="flex flex-col gap-[18px] text-[16px] mt-[18px]"

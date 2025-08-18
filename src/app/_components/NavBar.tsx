@@ -6,21 +6,22 @@ import logo from '@/images/logo.png'
 import notificationBell from '@/images/notificationBell.png'
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function NavBar(){
 
     const pathname = usePathname()
     return(
-        <nav className="flex justify-between text-[17px] pb-[24px] bg-[#FFFFFF] px-[50px] 
+        <nav className="flex justify-between text-[16px] pb-[24px] bg-[#FFFFFF] px-[50px] 
                     border-b border-solid border-[#D9D9D9] items-center pt-[22px] fixed top-0 w-full">
           <div className="flex gap-2 items-center">
             <Image src={logo} alt="logo" className="w-[19.25px] h-[19.68px]"/>
-            <p className="font-semibold text-[20px]">Global Emergency News</p>
+            <p className="font-semibold text-[16px]">Global Emergency News</p>
           </div>
 
-          <div className="flex gap-[28px]">
-            <button className={pathname == "/"? "font-semibold": ""}>Home</button>
-            <button className={pathname == "/about"? "font-semibold": ""}>About Us</button>
+          <div className="flex gap-[28px] items-center">
+            <Link href={'/'} className={pathname == "/"? "font-semibold": ""}>Home</Link>
+            <Link href={'/about'} className={pathname == "/about"? "font-semibold": ""}>About Us</Link>
 
             <div className="flex gap-[13px]">
               <LanguageSelect/>
